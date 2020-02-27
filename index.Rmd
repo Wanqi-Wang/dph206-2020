@@ -344,7 +344,17 @@ What academic software for data analysis do you often use in your research area?
 
 2. Wanqi
 
-SAS, R, stata
+- **SAS**: Use as a beginer. SAS has strong function, and is friendly to many language, while codes may be complex and long. 
+
+- **R**: I use it for better communication.
+
+- **R studio**: I only learn it but haven't use it in research.
+
+- **Stata**: I use it to analysis clinical data for better communication.
+
+- **Hadoop**: Big data analysis with better communication.
+
+
 
 3. Jane
 
