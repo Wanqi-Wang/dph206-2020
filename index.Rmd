@@ -13,7 +13,7 @@ github-repo: "pzhaonet/dph206-2020"
 
 
 ```{r include=FALSE}
-knitr::opts_chunk$set(eval = TRUE, echo = FALSE, message = FALSE, warning = FALSE, error = FALSE)
+knitr::opts_chunk$set(eval = FALSE, echo = TRUE, message = FALSE, warning = FALSE, error = FALSE)
 Sys.setlocale('LC_ALL', 'Chinese')
 # library(RefManageR)
 # bib <- ReadBib("bib.bib")
@@ -72,7 +72,7 @@ DPH 206 introduces students to the fieldwork in public health and provides the o
 
 This course aims to provide the student with a basic understanding of methods and issues involved with collecting, processing, analysing, and presenting data.
 
-```{r, out.width="100%"}
+```{r, out.width="100%", eval = TRUE, echo=FALSE}
 knitr::include_graphics("https://biostat2.uni.lu/lectures/img/01/tidyverse_data_science.png")
 ```
 
@@ -89,7 +89,7 @@ The assessment is composed of assignments (40% of total mark), an oral presentat
 
  The assignments will be:
 
-```{block2, echo = TRUE, type='rmdas'}
+```{block2, type='rmdas'}
 
 1. calculating data statistics,
 2. plotting figures for data visualization,
@@ -136,14 +136,14 @@ The course will be delivered through a series of lectures, seminars, case study 
 
 **Mandatory textbook**
 
-```{r, out.width="30%"}
+```{r, out.width="30%", echo=FALSE}
 knitr::include_graphics("https://d33wubrfki0l68.cloudfront.net/b88ef926a004b0fce72b2526b0b5c4413666a4cb/24a30/cover.png")
 ```
 
 
 Wickham, Hadley and Garrett Grolemund (2016). *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data.* O’Reilly Media, Inc. <URL: https://r4ds.had.co.nz/>.
 
-```{r, out.width="30%"}
+```{r, out.width="30%", echo=FALSE}
 knitr::include_graphics("https://bookdown.org/yihui/rmarkdown/images/cover.png")
 ```
 
@@ -151,19 +151,19 @@ Xie, Yihui, J J Allaire, and Garrett Grolemund (2019). *R Markdown: The Definiti
 
 **Optional textbook**
 
-```{r, out.width="30%"}
+```{r, out.width="30%", echo=FALSE}
 knitr::include_graphics("https://images-na.ssl-images-amazon.com/images/I/41RgIDd73eL._SX345_BO1,204,203,200_.jpg")
 ```
 
 Guest, Greg and Emily E Namey (2014). *Public health research methods*. SAGE publications, ISBN 978-1452241333.
 
-```{r, out.width="30%"}
+```{r, out.width="30%", echo=FALSE}
 knitr::include_graphics("https://images-na.ssl-images-amazon.com/images/I/51T7L8omv%2BL._SX402_BO1,204,203,200_.jpg")
 ```
 
 Picardi, Carrie A and Kevin D Masick (2013). *Research methods: Designing and conducting research with a real-world focus.* Sage Publications, ISBN 978-1452230337.
 
-```{r, out.width="30%"}
+```{r, out.width="30%", echo=FALSE}
 knitr::include_graphics("https://img13.360buyimg.com/n1/jfs/t24256/89/1035798887/591361/d2cf7700/5b4d8866Ne96290bb.jpg")
 ```
 
@@ -213,7 +213,7 @@ Data processing and presenting software packages must be installed in your compu
 
 Sometimes, if we have to use office packages,  LibreOffice is recommended. We **WON’T** use Microsoft Office (Word, Excel, Powerpoint) in the class unless we have no other choices. After class, you are free to use any software as you like.
 
-```{block2, echo = TRUE, type='rmdex'}
+```{block2, type='rmdex'}
 
 Exercise:
 
@@ -225,7 +225,7 @@ Install R in Windows like this:
 
 ```
 
-```{block2, echo = TRUE, type='rmdex'}
+```{block2, type='rmdex'}
 
 Exercise:
 
@@ -237,7 +237,7 @@ Install RStudio like this:
 
 ```
 
-```{block2, echo = TRUE, type='rmdex'}
+```{block2, type='rmdex'}
 Install Typora like this: 
 
 1. Open the download page on Typora official website: <https://typora.io/#windows>.
@@ -305,27 +305,27 @@ You can open Typora, and type the texts in the left column of Table 2. See what 
 Click the `</>` button at the left bottom of typora. Click it again. Again.
 
 
-```{block2, echo = TRUE, type='rmdex'}
+```{block2, type='rmdex'}
 Exercise:
 
 Github support markdown. Visit the [Markdown Practice issue](https://github.com/pzhaonet/dph206-2020/issues/3), and type anything with markdown syntax. Every syntax in Table 2 must be practised.
 ```
 
-```{block2, echo = TRUE, type='rmdex'}
+```{block2, type='rmdex'}
 
 Exercise:
 
 Use markdown in your every day study/life and Write a document, a meeting protocol, a diary, a lab report, etc., and present it in the seminar of this week.
 ```
 
-```{block2, echo = TRUE, type='rmdex'}
+```{block2, type='rmdex'}
 
 Exercise:
 
 Use markdown in your every day study/life and Write a document, a meeting protocol, a diary, a lab report, etc., and present it in the seminar of this week.
 ```
 
-```{block2, echo = TRUE, type='rmdds'}
+```{block2, type='rmdds'}
 Discussion:
 
 What academic software for data analysis do you often use in your research area? Make a list and give us a short introduction in the seminar. 
@@ -361,4 +361,411 @@ What academic software for data analysis do you often use in your research area?
 R
 
 ### Practice: Markdown, R markdown, and reproducible research
+
+- git
+
+# O2 {#w2}
+
+## Data analysis software
+
+- Fortran, C
+
+![](https://www.wikihow.com/images/thumb/5/5d/Fortran-hello-world-program-write-corrected.png/728px-Fortran-hello-world-program-write-corrected.png.webp)
+
+- Excel, WPS, Libreoffice, OriginLab
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Libreoffice_Calc_in_Linux.png/1280px-Libreoffice_Calc_in_Linux.png?1582839484266)
+
+- Visual Basic, R, Python, Matlab, Scilab
+
+![](https://www.scilab.org/sites/all/themes/scilab/images/scilab601c.png)
+
+- SPSS, Epi Info, NVivo, ArcGIS
+
+![](https://upload.wikimedia.org/wikipedia/commons/1/14/Epiinfoanalisis.jpg)
+
+![](https://i0.wp.com/makemeanalyst.com/wp-content/uploads/2017/07/top10-analytics-data-science-software-2016.jpg?w=466)
+
+
+```{r, echo=FALSE, eval=TRUE, results='asis'}
+fortunes::fortune('pizza')
+```
+
+## R essentials
+
+### RStudio
+
+Interface:
+
+![](https://bookdown.org/ndphillips/YaRrr/images/RStudio_Screenshot_Labels.png)
+
+Hotkeys:
+
+- ctrl + enter
+- TAB
+- F1
+- shift + alt + k (see all shortcuts)
+
+R project: 
+
+- File - New project - New directory - New project
+- Organize your R scripts and products in a project:
+  - Save your related files in the project folder
+  - Start your work from the .Rproj file
+
+### Data types
+
+Six basic data types:
+
+1. numeric: 2, 15.5
+2. character: "a", "male"
+3. logical: TRUE, FALSE
+4. integer
+5. complex
+6. raw
+
+```{r}
+x <- 1
+class(x)
+mode(x)
+```
+
+Numeric:
+
+```{r}
+1 + 2 - 4 * 5 / 6 ^ 2
+c(1:6) ^ 2
+round(3.14)
+sqrt(2)
+exp(4)
+log(10)
+log10(10)
+x = 1:6
+y <- 1:6 # alt + _
+x + y
+mean(x) # min(), max(), range(), mean(), sd(x)
+# comment
+```
+
+Character:
+
+```{r}
+x <- c('m', 'f')
+y <- paste('gender_', x)
+y
+y <- paste0('gender_', x)
+y
+```
+
+Logical:
+
+```{r}
+1 > 2
+1 <= 2
+```
+
+Simple `if()`:
+
+```{r}
+hour <- 12
+if(hour == 12) {
+  print('Time for lunch. Go!')
+}
+hour <- 12
+```
+
+`if()... else...` and `ifelse()`:
+
+```{r}
+if(hour < 12) {
+  print('Good morning.')
+} else {
+  print('Good afternoon.')
+}
+
+x <- 1:6
+x2 <- ifelse(x < mean(x), 
+             print('low'), 
+             print('high'))
+x2
+```
+
+Loop:
+
+```{r}
+x <- 1:10
+
+# repeat the same work
+for(i in x){
+  print('Hello World!')
+}
+
+# different work
+for(i in x){
+  print(i)
+}
+
+```
+
+```{r}
+for(i in x){
+  dir.create(as.character(i))
+}
+
+
+for(i in x){
+  unlink(as.character(i), recursive = TRUE, force = TRUE)
+}
+
+```
+
+### Import data
+
+From manual input:
+
+```{r}
+df1 <- data.frame(age = c(21, 31, 23, 40, 36),
+                  gender = c('f', 'm', 'm', 'f', 'f'))
+df1
+
+require(tibble)
+df2 <- tribble(
+  ~age, ~gender,
+  76,    'f',
+  79,    'm',
+  85,    'f',
+  93,    'f',
+  88,    'm'
+)
+df2
+```
+
+
+Read from data file ([download data](https://raw.githubusercontent.com/pzhaonet/dph206-2020/master/data/death_rate.csv)):
+
+```{r}
+dr1 <- read.csv('data/death_rate.csv')
+dr1
+dr2 <- readr::read_csv('data/death_rate.csv')
+dr2
+```
+
+Three tricks for the Support of Chinese:
+
+1. Save the dataset as UTF-8.
+2. Set the system locale as Chinese.
+3. Read the data file with `encoding = 'UTF-8'`.
+
+[Download data](https://raw.githubusercontent.com/pzhaonet/dph206-2020/master/data/ncov.csv) before running the following codes.
+
+```{r}
+Sys.getlocale()
+Sys.setlocale('LC_CTYPE', 'Chinese')
+df3 <- read.csv('data/ncov.csv')
+df3 <- read.csv('data/ncov.csv', encoding = 'UTF-8')
+df3
+df4 <- readr::read_csv('data/ncov.csv')
+df4
+```
+
+
+Indexing:
+
+```{r}
+df1
+df1[1, 2]
+df1[, 1]
+df1$age
+mean(df1$age)
+mean(df1$age[df1$gender == 'f'])
+tapply(df1$age, df1$gender, mean)
+```
+
+
+```{r}
+str(df1)
+str(df1$age)
+class(df1)
+dim(df1)
+rownames(df1)
+colnames(df1)
+```
+
+### Statistics
+
+```{r}
+df3 <- read.csv('data/ncov.csv', encoding = 'UTF-8')
+length(df3)
+ncol(df3)
+nrow(df3)
+sum(df3$确诊)
+sum(df3$确诊) / nrow(df3)
+mean(df3$确诊)
+confirmed_mean <- mean(df3$确诊)
+confirmed_mean
+df3$confirmed2 <- df3$确诊 - confirmed_mean
+max(df3$确诊)
+min(df3$确诊)
+range(df3$确诊)
+median(df3$确诊)
+sd(df3$确诊)
+colSums(df3[, 3:5], na.rm = TRUE)
+colMeans(df3[, 3:5], na.rm = TRUE)
+apply(df3[, 3:5], 2, median, na.rm = TRUE)
+summary(df3)
+```
+
+### Visualization
+
+```{r}
+plot(df3$名称, df3$确诊, log = "y")
+```
+
+
+### Export data and figures
+
+```{r}
+write.csv(df3, 'data/df3.csv', fileEncoding = 'UTF-8')
+```
+
+```{r}
+pdf('fig/df3.pdf')
+plot(df3$名称, df3$确诊, log = "y")
+dev.off()
+```
+
+## R packages
+
+### Overview
+
+- MatLab: toolboxes
+- python: libraries
+- MS Office: modules
+- Chrome: add-ons/plugins
+
+Basic R:
+
+![](https://hips.hearstchina.com/hmg-prod.s3.amazonaws.com/images/1138749846.jpg?resize=980:*)
+
+R packages:
+
+```{r, echo=FALSE, eval=TRUE}
+knitr::include_graphics('images/nezha2.jpg')
+```
+
+Development of R packages:
+
+![](https://revolution-computing.typepad.com/.a/6a010534b1db25970b01b8d2594d25970c-pi)
+
+Most popular R packages:
+
+![](https://www.kdnuggets.com/wp-content/uploads/top-20-r-packages-downloads.jpg)
+
+How to find:
+
+- <https://cran.r-project.org/web/views/>
+
+### Tidyverse
+
+```{r, out.width="100%", echo=FALSE, eval=TRUE}
+knitr::include_graphics("https://biostat2.uni.lu/lectures/img/01/tidyverse_data_science.png")
+```
+
+```{r}
+install.packages('tidyverse')
+require(tidyverse)
+df3 %>% 
+  ggplot(aes(x = 名称, y = 确诊)) +
+  geom_point() + 
+  scale_y_log10()
+```
+
+### R markdown
+
+![](https://steemitimages.com/0x0/https://www.pzhao.org/slides/ross-mpic/img/workflow.png)
+
+```{r}
+install.packages('rmd')
+```
+
+Use codes in R markdown: RStudio - File - New File - R Markdown.
+
+How to get this book locally:
+
+- Install the R package "blogdown".
+- Download the repo of [this book](https://github.com/pzhaonet/dph206-2020): Clone or download - Download Zip.
+- Unzip it.
+- Open it in RStudio.
+- Build.
+
+### Packages about public health
+
+- Epi
+- epibasix
+- epiDisplay
+- epiR
+- epitools
+- survey
+- pubh
+- ncovr
+
+## Assignment
+
+```{block2, type='rmdas'}
+Assignment 1: Select and calculate data statistics. Submission deadline: 2020-03-09 14:00  (5% of final mark, no re-sit).
+
+1. Find a public health dataset that has been published in literature or government webisites. The dataset must be raw data (not processed) and should consist of at least 20 rows of data with 4 or more columns of associated data. Save the dataset as a .csv file. 
+2. Create an R markdown file (.Rmd), in which the dataset is imported.
+3. In the .Rmd file, report the summary of the dataset with descriptive statistics, including the mean, minimum, maximum, range and standard deviation.
+4. Knit the .Rmd file into a .html report.
+5. Submit the .csv file, the .Rmd file, and the .html file.
+
+Please be aware of the XJTLU policies for timely submission of work.
+```
+
+## Seminar/practice
+
+### Basic R
+
+```{block2, type='rmdex'}
+Exercise:
+
+Calculate the circumference and area of a circle with a radius of 10m, 20m, 30m, 40m, 60m.
+```
+
+```{block2, type='rmdex'}
+Exercise:
+
+$y = \frac{ax}{e} + b$, $a = 3.2$, $b = 98$. Calculate the $y$ values when $x = 0.2, 2, 20, 200$.
+```
+
+### Data
+
+```{block2, type='rmdex'}
+Exercise:
+  
+1. Download the data of the Death Rate in the US in 2016.
+2. Import the data file into R
+3. How many rows and columns?
+4. What is death rate of the heart disease in Hawaii?
+5. Calculate the mean, maximum, minimum, median of each disease.
+6. Create a new column for the death rate of the heart disease with integers.
+7. Make a summary of the data frame.
+8. Make a scatterplot for each pair of the diseases.
+9. Save the data, figure, script, workspace, and history.
+```
+
+### R Markdown
+
+```{block2, type='rmdex'}
+Exercise:
+  
+Use the previous exercises and create an exercise report with R Markdown.
+```
+
+### Your own
+
+```{block2, type = "rmdds"}
+Play with your own data: import, calculate, save, and use R Markdown.
+```
 
