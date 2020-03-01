@@ -471,12 +471,12 @@ hour <- 12
 if(hour == 12) {
   print('Time for lunch. Go!')
 }
-hour <- 12
 ```
 
 `if()... else...` and `ifelse()`:
 
 ```{r}
+hour<- 12
 if(hour < 12) {
   print('Good morning.')
 } else {
