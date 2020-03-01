@@ -529,7 +529,7 @@ df1 <- data.frame(age = c(21, 31, 23, 40, 36),
 df1
 
 require(tibble)
-df2 <- tribble(
+df2 <- tibble(
   ~age, ~gender,
   76,    'f',
   79,    'm',
